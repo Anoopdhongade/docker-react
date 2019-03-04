@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t anoopdhongade/docker-react -f . 
+  - docker build -t anoopdhongade/docker-react . 
 
 script:
   - docker run anoopdhongade/docker-react npm run test -- --coverage
